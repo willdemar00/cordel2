@@ -16,16 +16,18 @@ html, body
     font-family: var(--font1);
     min-height: 100vh;
     background-color: #d3d3d3aa;
+    margin: 0px;
 
 }
 header
 {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.703);
     color: white;
     text-align: center;
    
     padding-top: 50px;
     padding-bottom: 30px;
+    font-weight: 600;
     font-variant: small-caps;
     font-family: var(--font2);
     margin-top: -8px;
@@ -57,7 +59,7 @@ section{
 section.img p{
 
     background-color: #0000008d;
-    width: 400px;
+    width: 300px;
     padding-left: 10px;
 }
 section.normal{
