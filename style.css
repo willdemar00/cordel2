@@ -1,7 +1,19 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root{
+
+    --font1: Verdana, Geneva, Tahoma, sans-serif;;
+    --font2: 'Passion One', cursive;
+    --font3: 'Sriracha', cursive;
+}
+
 html, body
 {
+    font-family: var(--font1);
     min-height: 100vh;
     background-color: #d3d3d3aa;
 
@@ -11,11 +23,16 @@ header
     background-color: black;
     color: white;
     text-align: center;
+   
     padding-top: 50px;
     padding-bottom: 30px;
     font-variant: small-caps;
-
+    font-family: var(--font2);
+    margin-top: -8px;
+    margin-bottom: -16px
+   
 }
+h1{font-size: 50px;}
 a{
     color: white;
     text-decoration: none;
@@ -35,23 +52,35 @@ section{
     padding-bottom: 10vh;
     padding-left: 20px;
     line-height: 2em;
+    font-family:var(--font3) ;
 }
 section.img p{
 
-    background-color: #00000043;
+    background-color: #0000008d;
     width: 400px;
+    padding-left: 10px;
 }
 section.normal{
-
-
+    margin-bottom: -20px;
+    background-color: white;
 }
 section.img{
-
+    text-shadow:-1px 4px 2px black;
     background-color: #2c2b2b;
     color: white;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
-
+section#img1{
+    background-image: url(https://sicolos.com.br/wp-content/uploads/2021/06/SicoloS-BLOG-2-750x465.png);
+    
+}
+section#img2{
+    background-image: url(https://eskadauema.com/pluginfile.php/2250381/course/overviewfiles/%C3%8Dcone%20-%20Literatura%20de%20Cordel.png);
+}
 
 footer{
 
@@ -61,3 +90,6 @@ footer{
     padding: 10px;
     font-variant: small-caps;
 }
+footer ul{text-align: left;
+}
+img{ border-radius: 10px;}
